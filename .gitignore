@@ -3,6 +3,5 @@
 dist/
 node_modules
 npm-debug.log
-data
 submission.csv
 result.js
