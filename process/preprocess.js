@@ -146,21 +146,21 @@ function process_objects_hierarchy(index, output_objects, input_objects, descrip
 
 	let d = [];
 
-	if (same_input_shape || transformed_input_shape) {
-		d = ["let", "object_" + index];
-		let expr = ["find_similar_input",
-			'\"'+input_objects[input_i].color+'\"',
-			input_objects[input_i].w,
-			input_objects[input_i].h,
-			input_objects[input_i].min_x,
-			input_objects[input_i].min_y];
-		if (transformed_input_shape) {
-			expr.push(transform);
-		}
-		d.push(expr);
-		description.push(d);
-		return;
-	}
+	// if ((same_input_shape || transformed_input_shape) && obj.complex) {
+	// 	d = ["let", "object_" + index];
+	// 	let expr = ["find_input",
+	// 		'\"'+input_objects[input_i].color+'\"',
+	// 		input_objects[input_i].w,
+	// 		input_objects[input_i].h,
+	// 		input_objects[input_i].min_x,
+	// 		input_objects[input_i].min_y];
+	// 	if (transformed_input_shape) {
+	// 		expr.push(transform);
+	// 	}
+	// 	d.push(expr);
+	// 	description.push(d);
+	// 	return;
+	// }
 
 	if (obj.children.length == 0) {
 		if (!obj.complex) {
