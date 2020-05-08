@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ARC demo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    	<link rel="stylesheet" href="./css/tachyons.min.css">
+    	<link rel="stylesheet" href="./css/starter.css">
+
+		<script src="./data/data2.json"></script>
+
+		<script src="./lib/lodash.min.js" ></script>
+		<script src="./lib/d3.min.js"></script>
+		<script src="./lib/jquery-3.3.1.min.js"></script>
+
+		<script src="./process/generate_target.js"></script>
+		<script src="./process/utils.js"></script>
+		<script src="./process/compare_utils.js"></script>
+		<script src="./process/connected_components.js"></script>
+		<script src="./process/features.js"></script>
+		<script src="./process/abstract_tags.js"></script>
+		<script src="./process/preprocess.js"></script>
+
+		<script src="./show_problem.js"></script>
+		<script src="./show_features.js"></script>
+		<script src="./vis_utils.js"></script>
+		<script src="./load.js"></script>
+	</head>
+
+	</head>
+
+	<body class="sans-serif white overflow-hidden">
+
+	    <div class="fl" id="two">
+
+			<div class="example objects_container w-100" id="example_container">
+
+				<div class="input_image cl fl"><div class="f6">input</div></div>
+				<div class="output_image ml2 fl"><div class="f6">output</div></div>
+				<div class="result_image ml2 fl"><div class="f6">result</div></div>
+
+				<div class="input_objects cl fl w-25">
+					<div class="mv2">input objects</div>
+				</div>
+				<div class="output_objects fl w-25">
+					<div class="mv2">output objects</div>
+				</div>
+
+				<div class="output_description fl w-50 f6">
+					<div class="mv2">output description</div>
+				</div>
+
+				<div class="cl fl mt2 w-25">
+					<div class="ml1">input features</div>
+					<div class="input_features mh1 fl">
+					</div>
+				</div>
+
+				<div class="fl mt2 w-25">
+					<div class="ml1">output features</div>
+					<div class="output_features mh1 fl">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	    <div class="fl f6 three" id="three">
+		</div>
+
+		<script>
+			load();
+		</script>
+
+	</body>
+</html>

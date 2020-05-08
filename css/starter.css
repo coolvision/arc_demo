@@ -1,0 +1,49 @@
+body,
+html {
+    height: 100vh
+}
+
+body {
+    z-index: -10;
+    background-color: black;
+}
+
+* {
+    outline: none !important;
+    outline: 0;
+}
+
+#two {
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 80%;
+    overflow-y: scroll;
+    height: calc(100vh);
+}
+
+#three {
+    float: left;
+    width: 20%;
+    overflow-y: scroll;
+    height: calc(100vh);
+}
+
+.data_display {
+	whiteite-space:pre-wrap;
+}
+
+.editable_code {
+	white-space:pre-wrap;
+    /* min-height: 50px; */
+
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+ /* Non standard for webkit */
+     word-break: break-word;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
